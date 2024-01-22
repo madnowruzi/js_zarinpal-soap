@@ -1,0 +1,48 @@
+{
+  "name": "@madnow/zarinpal-soap",
+  "version": "0.0.1",
+  "description": "Unofficial node.js package for Zarinpal web api using SOAP",
+  "keywords": [
+    "zarinpal",
+    "soap"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/madnowruzi/js_zarinpal-soap#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madnowruzi/js_zarinpal-soap.git"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "lint": "eslint --cache --ext .ts,.js,.mjs,.cjs . && prettier -c src",
+    "lint:fix": "eslint --cache --ext .ts,.js,.mjs,.cjs . --fix && prettier -c src -w",
+    "release": "npm publish --access=public"
+  },
+  "dependencies": {
+    "soap": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-unjs": "^0.2.1",
+    "prettier": "^3.2.4",
+    "typescript": "^5.3.3",
+    "unbuild": "^2.0.0"
+  }
+}
