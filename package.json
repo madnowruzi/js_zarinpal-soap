@@ -1,6 +1,6 @@
 {
   "name": "@madnow/zarinpal-soap",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Unofficial node.js package for Zarinpal web api using SOAP",
   "keywords": [
     "zarinpal",
@@ -18,10 +18,13 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
+    "import": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    },
+    "require": {
+      "types": "./dist/index.d.cts",
+      "default": "./dist/index.cjs"
     }
   },
   "files": [
