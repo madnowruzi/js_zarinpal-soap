@@ -1,6 +1,6 @@
 {
   "name": "@madnow/zarinpal-soap",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Unofficial node.js package for Zarinpal web api using SOAP",
   "keywords": [
     "zarinpal",
